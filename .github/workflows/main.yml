@@ -105,6 +105,11 @@ jobs:
           haxelib install lime 8.2.1 --quiet
           haxelib install utest --quiet
 
+      - name: Install HashLink (macOS)
+        run: |
+          brew update
+          brew install hashlink
+
       - name: Setup environment
         run: |
           haxelib dev openfl ${{ github.workspace }}
@@ -117,7 +122,7 @@ jobs:
       - name: Run tests on HashLink
         run: |
           haxelib run hxp test -Dtarget=hl -Duse-lime-tools --install-hxp-alias
-
+          
   unit-test-air:
     strategy:
       matrix:
