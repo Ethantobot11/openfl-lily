@@ -10,7 +10,7 @@ jobs:
         with:
           submodules: true
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 3.4.7
 
@@ -49,7 +49,7 @@ jobs:
         with:
           submodules: true
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: ${{ matrix.haxe-version }}
 
@@ -129,7 +129,7 @@ jobs:
         with:
           submodules: true
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: ${{ matrix.haxe-version }}
 
@@ -172,7 +172,7 @@ jobs:
         with:
           submodules: true
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.1.5
 
@@ -208,7 +208,7 @@ jobs:
         with:
           submodules: true
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.1.5
 
@@ -244,7 +244,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: ${{ matrix.haxe-version }}
 
@@ -290,7 +290,7 @@ jobs:
     runs-on: windows-latest
     steps:
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.1.5
 
@@ -345,7 +345,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.2.5
 
@@ -391,7 +391,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.2.5
 
