@@ -224,7 +224,7 @@ class FileStream extends EventDispatcher implements IDataInput implements IDataO
 		if (async)
 		{
 			__fileStreamMutex.acquire();
-			if (__fileStreamWorker != null && !__fileStreamWorker.canceled)
+			if (__fileStreamWorker != null && !__fileStreamWorker.cancel)
 			{
 				__pendingClose = true;
 				__fileStreamMutex.release();
